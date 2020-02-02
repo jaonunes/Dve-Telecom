@@ -1,0 +1,91 @@
+/*Tags*/
+html, body{
+    height: 100%;
+}
+header{
+    background-image: url(../img/bg.jpeg);
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer address:last-child {
+    margin-bottom: 0;
+}
+section{
+    padding-top: 90px;
+}
+
+/*Classes*/
+.devTelecom-bannerWrapper {
+    position: relative;
+    height: 100%;
+}
+.devTelecom-banner{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+.titulo-section{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    color: dimgray;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.paineis-sobre-nos{
+    padding-top: 10px;
+}
+.todos-collapse{
+    cursor: pointer;
+}
+/*Id's*/
+
+
+/*Conjunto*/
+
+
+
+/* Responsividade */
+@media(min-width:992px) {
+    .devTelecom-banner {
+    left: 0;
+    transform: translate(0, -40%);
+    }
+    section{
+        padding-top: 50px;
+    }
+
+    
+    
+}
+@media(min-width: 768px){
+    .colunas-2{
+        width: 50%;
+        float: left;
+    }
+    #paineis-sobre{
+        margin-top: 0;
+    }
+    section{
+        padding-top: 50px;
+    }
+
+}
