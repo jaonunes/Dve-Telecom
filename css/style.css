@@ -56,8 +56,23 @@ section{
 .todos-collapse{
     cursor: pointer;
 }
+.div-logo-empresa{
+    margin: 0;
+    width: 100px;
+ }
+ .navbar-header{
+    width: 100px;
+}
+.div-textos-menu{
+    text-align: center;
+  
+}
+
 /*Id's*/
 
+#collapse-navbar{
+    z-index: 100;
+}
 
 /*Conjunto*/
 
@@ -87,5 +102,16 @@ section{
     section{
         padding-top: 50px;
     }
+    .div-menu-nav{
+        padding: 10px;
+    }
 
+}
+@media(max-width: 767px){
+    .navbar-header{
+        left: 60%;
+    }
+    .div-menu-nav{
+        padding: 20px;
+    }
 }

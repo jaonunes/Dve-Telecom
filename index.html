@@ -4,24 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>DVE Telecom</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <!-- Esse meta calcula altura e largura da pagina, serve para resposividade-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="css/jquery.js"></script>
     <script src="/css/bootstrap/js/bootstrap.min.js"></script>
     <script src="/script/mapa.js"></script>
     <script src="/script/ancora-animation-fix.js"></script>
+    <script src="/script/fecharMenu.js"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <a href="#home" class="navbar-left animation-ancora">
-                    <figure><img src="img/logo.png" alt="logo da empresa" class="logo-empresa"></figure>
-                </a>
-                <div class="navbar-header navbar-right">
+        <nav class="navbar navbar-default navbar-fixed-top ">
+            <div class="container row div-menu-nav">
+                <div class="div-logo-empresa col-xs-6 col-md-4">
+                    <a href="#home" class="navbar-left animation-ancora">
+                        <img src="img/logo.png" alt="logo da empresa" class="logo-empresa">
+                    </a>
+                </div>
+                <div class="navbar-header navbar-right col-xs-12 col-md-8">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#collapse-navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -32,13 +35,13 @@
                     </button>
 
                 </div>
-                <div class="collapse navbar-collapse" id="collapse-navbar">
+                <div class="collapse navbar-collapse div-textos-menu col-xs-12" id="collapse-navbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#home" class="animation-ancora">Home</a></li>
-                        <li><a href="#sobre-nos" class="animation-ancora">Sobre</a></li>
-                        <li><a href="#nossos-servicos" class="animation-ancora">Serviços</a></li>
-                        <li><a href="#planos" class="animation-ancora">Planos</a></li>
-                        <li><a href="#contato" class="animation-ancora">Fale conosco</a></li>
+                        <li><a href="#home" class="animation-ancora" onclick="fecharMenu()">Home</a></li>
+                        <li><a href="#sobre-nos" class="animation-ancora" onclick="fecharMenu()">Sobre</a></li>
+                        <li><a href="#nossos-servicos" class="animation-ancora" onclick="fecharMenu()">Serviços</a></li>
+                        <li><a href="#planos" class="animation-ancora" onclick="fecharMenu()">Planos</a></li>
+                        <li><a href="#contato" class="animation-ancora" onclick="fecharMenu()">Fale conosco</a></li>
                     </ul>
                 </div>
             </div>
@@ -240,6 +243,7 @@
                     </figcaption>
                 </figure>
             </div>
+            
         </div>
     </section>
     <section id="contato" class="container">
@@ -249,6 +253,7 @@
     <footer>
         <address>
             <strong>DVE - Telecom </strong> <br>
+            <img src="http://maps.googleapis.com/maps/api/staticmap?center=-12.977243,-38.489751&zoom=11&size=250x250" alt="">
             Tv Jaguarari, 45, Cosme De Farias, <br>
             Salvador <br>
             Tel: (xx) xxxx-xxxx ou xxxx-xxxx
